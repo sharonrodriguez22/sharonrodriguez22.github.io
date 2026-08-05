@@ -33,7 +33,9 @@ jobs:
           cache: npm
 
       - name: Install
-        run: npm ci
+        # npm install (y no npm ci) resuelve el árbol de dependencias en el
+        # runner, así que no depende de que package-lock.json esté completo.
+        run: npm install --no-audit --no-fund
 
       - name: Build
         run: npm run build

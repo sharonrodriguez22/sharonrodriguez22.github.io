@@ -135,6 +135,27 @@ photo: '/img/como-se-llame.jpg',
 
 ---
 
+## Nota sobre `package-lock.json`
+
+El workflow usa `npm install` en vez de `npm ci` porque el lockfile que quedó en
+el repo está incompleto.
+
+Si algún día instalás Node, podés dejarlo perfecto:
+
+```powershell
+cd "$env:USERPROFILE\OneDrive\Desktop\Portafolio"
+npm install
+git add package-lock.json
+git commit -m "Lockfile completo"
+git push
+```
+
+Después, si querés, en `.github\workflows\deploy.yml` podés volver a poner
+`npm ci` en el paso *Install*: es más rápido y más reproducible. No es urgente —
+con `npm install` el sitio publica igual.
+
+---
+
 ## Cambiar cualquier otra cosa
 
 Casi todo el contenido vive en **`src\data\content.ts`**: textos, experiencia,
