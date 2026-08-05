@@ -1,0 +1,16 @@
+---
+interface Props {
+  kicker: string;
+  title: string;
+  blurb?: string;
+}
+const { kicker, title, blurb } = Astro.props;
+---
+
+<div class="head">
+  <div>
+    <p class="kicker">{kicker}</p>
+    <h2>{title}</h2>
+  </div>
+  {blurb && <p class="head-blurb">{blurb}</p>}
+</div>

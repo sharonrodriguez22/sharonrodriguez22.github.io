@@ -1,0 +1,107 @@
+---
+import '../styles/global.css';
+import { content, profile, type Lang } from '../data/content';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = content[lang];
+const alternate = lang === 'es' ? '/en/' : '/';
+---
+
+<!doctype html>
+<html lang={t.htmlLang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{t.meta.title}</title>
+    <meta name="description" content={t.meta.description} />
+    <meta name="author" content={profile.name} />
+    <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)} />
+    <link rel="alternate" hreflang={lang === 'es' ? 'en' : 'es'} href={new URL(alternate, Astro.site)} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content={t.meta.title} />
+    <meta property="og:description" content={t.meta.description} />
+    <meta property="og:image" content={new URL(profile.photo, Astro.site)} />
+    <meta property="og:locale" content={lang === 'es' ? 'es_AR' : 'en_US'} />
+    <meta name="twitter:card" content="summary" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Person',
+        name: profile.name,
+        jobTitle: t.hero.role,
+        email: `mailto:${profile.email}`,
+        url: Astro.site?.href,
+        sameAs: [profile.linkedin, profile.github],
+        address: { '@type': 'PostalAddress', addressLocality: 'Buenos Aires', addressCountry: 'AR' },
+      })}
+    />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href={lang === 'es' ? '/' : '/en/'}>
+          {profile.name}<span>.</span>
+        </a>
+
+        <nav class="nav" aria-label={lang === 'es' ? 'Navegación principal' : 'Main navigation'}>
+          <span class="nav-links">
+            <a href="#about">{t.nav.about}</a>
+            <a href="#experience">{t.nav.experience}</a>
+            <a href="#projects">{t.nav.projects}</a>
+            <a href="#skills">{t.nav.skills}</a>
+            <a href="#contact">{t.nav.contact}</a>
+          </span>
+          <a class="lang-switch" href={t.langSwitch.href} hreflang={lang === 'es' ? 'en' : 'es'}>
+            {t.langSwitch.code}
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <script>
+      // La marca del header solo aparece cuando el hero salió de pantalla:
+      // así el nombre no se repite dos veces en la primera vista.
+      const header = document.querySelector('.site-header');
+      const hero = document.querySelector('.hero');
+
+      if (header && hero && 'IntersectionObserver' in window) {
+        header.dataset.heroVisible = 'true';
+        new IntersectionObserver(
+          ([entry]) => {
+            header.dataset.heroVisible = entry.isIntersecting ? 'true' : 'false';
+          },
+          { rootMargin: '-64px 0px 0px 0px' }
+        ).observe(hero);
+      }
+    </script>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <span>© {new Date().getFullYear()} {profile.name} — {t.hero.role}</span>
+        <span>{t.footer.place}</span>
+      </div>
+    </footer>
+  </body>
+</html>
+

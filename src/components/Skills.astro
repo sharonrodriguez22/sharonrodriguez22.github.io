@@ -1,0 +1,31 @@
+---
+import SectionHead from './SectionHead.astro';
+import { content, type Lang } from '../data/content';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const t = content[lang];
+---
+
+<section class="section section--alt" id="skills">
+  <div class="wrap">
+    <SectionHead kicker={t.skills.kicker} title={t.skills.title} blurb={t.skills.blurb} />
+
+    <div class="grid">
+      {
+        t.skills.groups.map((g) => (
+          <div class="card">
+            <p class="group-label">{g.name}</p>
+            <ul class="chips">
+              {g.items.map((i) => (
+                <li class="chip">{i}</li>
+              ))}
+            </ul>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

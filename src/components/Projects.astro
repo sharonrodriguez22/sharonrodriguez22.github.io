@@ -1,0 +1,42 @@
+---
+import SectionHead from './SectionHead.astro';
+import { content, type Lang } from '../data/content';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const t = content[lang];
+---
+
+<section class="section" id="projects">
+  <div class="wrap">
+    <SectionHead kicker={t.projects.kicker} title={t.projects.title} blurb={t.projects.blurb} />
+
+    <div class="grid">
+      {
+        t.projects.items.map((p) => (
+          <article class="card">
+            <h3>{p.name}</h3>
+            <p class="card-meta">{p.meta}</p>
+            <p class="card-body">{p.body}</p>
+
+            <ul class="tags">
+              {p.tags.map((tag) => (
+                <li class="tag">{tag}</li>
+              ))}
+            </ul>
+
+            <div class="card-links">
+              {p.links.map((l) => (
+                <a href={l.href} target="_blank" rel="noopener noreferrer">
+                  {l.label} ↗
+                </a>
+              ))}
+            </div>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>

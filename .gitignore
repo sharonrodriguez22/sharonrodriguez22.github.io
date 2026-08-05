@@ -1,0 +1,19 @@
+# build
+dist/
+.astro/
+
+# dependencias
+node_modules/
+
+# entorno
+.env
+.env.production
+
+# previews locales de un solo archivo (no forman parte del sitio)
+preview.html
+preview-en.html
+
+# sistema
+.DS_Store
+Thumbs.db
+*.log

@@ -1,0 +1,39 @@
+---
+import SectionHead from './SectionHead.astro';
+import { content, type Lang } from '../data/content';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const t = content[lang];
+---
+
+<section class="section section--alt" id="experience">
+  <div class="wrap">
+    <SectionHead kicker={t.experience.kicker} title={t.experience.title} blurb={t.experience.blurb} />
+
+    {
+      t.experience.items.map((job) => (
+        <article class="job">
+          <div>
+            <p class="job-period">{job.period}</p>
+            <p class="job-place">{job.place}</p>
+          </div>
+
+          <div>
+            <h3>
+              {job.role} — <span class="job-company">{job.company}</span>
+            </h3>
+            <p class="job-context">{job.context}</p>
+            <ul class="bullets">
+              {job.bullets.map((b) => (
+                <li>{b}</li>
+              ))}
+            </ul>
+          </div>
+        </article>
+      ))
+    }
+  </div>
+</section>

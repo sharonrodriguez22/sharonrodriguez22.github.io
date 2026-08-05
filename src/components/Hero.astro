@@ -1,0 +1,41 @@
+---
+import { content, profile, type Lang } from '../data/content';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const t = content[lang];
+---
+
+<section class="hero">
+  <div class="wrap">
+    <div class="avatar-ring reveal">
+      <img src={profile.photo} alt={t.hero.photoAlt} width="640" height="640" fetchpriority="high" />
+    </div>
+
+    <p class="hero-location">{t.hero.location}</p>
+    <h1>{profile.name}</h1>
+    <p class="hero-role">{t.hero.role}</p>
+    <p class="hero-tagline">{t.hero.tagline}</p>
+    <p class="hero-intro">{t.hero.intro}</p>
+
+    <div class="actions">
+      <a class="btn btn-primary" href={t.hero.cvHref} download>
+        <span aria-hidden="true">↓</span>{t.hero.cta}
+      </a>
+      <a class="btn btn-ghost" href="#contact">{t.hero.ctaSecondary}</a>
+    </div>
+
+    <ul class="metrics reveal" data-delay="1">
+      {
+        t.highlights.map((h) => (
+          <li class="metric">
+            <p class="metric-value">{h.value}</p>
+            <p class="metric-label">{h.label}</p>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</section>

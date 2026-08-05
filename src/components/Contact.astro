@@ -1,0 +1,115 @@
+---
+import SectionHead from './SectionHead.astro';
+import { content, profile, type Lang } from '../data/content';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const t = content[lang];
+
+const items = [
+  {
+    label: t.contact.emailLabel,
+    value: profile.email,
+    href: `mailto:${profile.email}`,
+    external: false,
+    copy: profile.email,
+  },
+  {
+    label: t.contact.linkedinLabel,
+    value: '/in/sharonrodriguezliendo',
+    href: profile.linkedin,
+    external: true,
+    copy: profile.linkedin,
+  },
+  {
+    label: t.contact.githubLabel,
+    value: '@sharonrodriguez22',
+    href: profile.github,
+    external: true,
+    copy: profile.github,
+  },
+  {
+    label: t.contact.cvLabel,
+    value: lang === 'es' ? 'Descargar PDF ↓' : 'Download PDF ↓',
+    href: t.hero.cvHref,
+    external: false,
+    copy: null,
+  },
+];
+---
+
+<section class="section contact" id="contact">
+  <div class="wrap">
+    <SectionHead kicker={t.contact.kicker} title={t.contact.title} />
+
+    <div class="contact-grid">
+      {
+        items.map((i) => (
+          <div class="contact-item">
+            <a
+              class="contact-link"
+              href={i.href}
+              target={i.external ? '_blank' : undefined}
+              rel={i.external ? 'noopener noreferrer' : undefined}
+            >
+              <span class="contact-label">{i.label}</span>
+              <span class="contact-value">{i.value}</span>
+            </a>
+
+            {i.copy && (
+              <button
+                class="copy-btn"
+                type="button"
+                data-copy={i.copy}
+                data-done={t.contact.copiedLabel}
+                aria-label={`${t.contact.copyLabel} ${i.label}`}
+              >
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="9" y="9" width="12" height="12" rx="2" />
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+                </svg>
+                <span>{t.contact.copyLabel}</span>
+              </button>
+            )}
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<script>
+  document.querySelectorAll<HTMLButtonElement>('.copy-btn').forEach((btn) => {
+    btn.addEventListener('click', async () => {
+      const text = btn.dataset.copy ?? '';
+      const span = btn.querySelector('span');
+      if (!span) return;
+
+      const original = span.textContent;
+
+      try {
+        await navigator.clipboard.writeText(text);
+      } catch {
+        // Navegadores viejos o contextos sin permiso de portapapeles
+        const tmp = document.createElement('textarea');
+        tmp.value = text;
+        tmp.setAttribute('readonly', '');
+        tmp.style.position = 'fixed';
+        tmp.style.opacity = '0';
+        document.body.appendChild(tmp);
+        tmp.select();
+        document.execCommand('copy');
+        document.body.removeChild(tmp);
+      }
+
+      span.textContent = btn.dataset.done ?? 'OK';
+      btn.classList.add('is-done');
+      setTimeout(() => {
+        span.textContent = original;
+        btn.classList.remove('is-done');
+      }, 1600);
+    });
+  });
+</script>
