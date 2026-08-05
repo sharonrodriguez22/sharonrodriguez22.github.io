@@ -12,6 +12,9 @@ export const profile = {
   linkedin: 'https://www.linkedin.com/in/sharonrodriguezliendo/',
   github: 'https://github.com/sharonrodriguez22',
   photo: '/img/sharon-portrait.jpg',
+  // Imagen 1200x630 que se muestra al compartir el link en LinkedIn, WhatsApp, Slack.
+  // Se genera aparte; no se usa dentro del sitio.
+  ogImage: { es: '/img/og-es.jpg', en: '/img/og-en.jpg' },
 };
 
 export const content = {
