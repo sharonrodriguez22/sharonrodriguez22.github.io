@@ -126,6 +126,23 @@ Poné la foto en `public\img\` y actualizá una línea en
 photo: '/img/como-se-llame.jpg',
 ```
 
+### Ojo: el banner para compartir NO se actualiza solo
+
+Cuando pegás tu link en LinkedIn o WhatsApp aparece una tarjeta con un banner
+horizontal (`public\img\og-es.jpg` y `og-en.jpg`). Ese banner tiene tu foto
+**incrustada adentro**: es un archivo aparte, no lee `sharon-portrait.jpg`.
+
+Así que cada vez que cambies la foto hay que regenerarlo:
+
+```powershell
+pip install pillow numpy
+python scripts\generar-banner.py
+```
+
+Y después `git add .` → `git commit` → `git push` como siempre.
+
+Si no tenés Python instalado, pedímelo y lo regenero yo.
+
 ### Dos cosas que pueden confundirte
 
 - **Seguís viendo la foto vieja.** Es la caché del navegador. `Ctrl + F5`.
