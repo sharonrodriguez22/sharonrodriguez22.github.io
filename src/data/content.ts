@@ -105,7 +105,7 @@ export const content = {
         {
           name: 'Este sitio — Portfolio y CV bilingüe',
           meta: 'Proyecto personal · 2026',
-          body: 'Sitio estático en Astro con el contenido desacoplado de la presentación: una única fuente tipada en TypeScript alimenta las versiones en español e inglés durante el build. Cada push a main dispara un workflow de GitHub Actions que compila y publica en GitHub Pages.',
+          body: 'Lo construí y lo publiqué de punta a punta. El contenido vive en una única fuente tipada en TypeScript que genera las versiones en español e inglés, así los dos idiomas no se desincronizan. Cada push a main dispara un pipeline de GitHub Actions que compila y despliega solo, sin pasos manuales.',
           tags: ['Astro', 'TypeScript', 'GitHub Actions'],
           links: [
             {
@@ -310,7 +310,7 @@ export const content = {
         {
           name: 'This site — Bilingual portfolio and CV',
           meta: 'Personal project · 2026',
-          body: 'Static site built with Astro, with content decoupled from presentation: a single typed TypeScript source feeds both the Spanish and English versions at build time. Every push to main triggers a GitHub Actions workflow that builds and deploys to GitHub Pages.',
+          body: 'I built and shipped it end to end. All content lives in a single typed TypeScript source that generates both the Spanish and English versions, so the two never drift apart. Every push to main triggers a GitHub Actions pipeline that builds and deploys on its own, with no manual steps.',
           tags: ['Astro', 'TypeScript', 'GitHub Actions'],
           links: [
             {
