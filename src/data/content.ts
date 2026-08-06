@@ -103,6 +103,18 @@ export const content = {
           ],
         },
         {
+          name: 'Este sitio — Portfolio y CV bilingüe',
+          meta: 'Proyecto personal · 2026',
+          body: 'Sitio estático en Astro con el contenido desacoplado de la presentación: una única fuente tipada en TypeScript alimenta las versiones en español e inglés durante el build. Cada push a main dispara un workflow de GitHub Actions que compila y publica en GitHub Pages.',
+          tags: ['Astro', 'TypeScript', 'GitHub Actions'],
+          links: [
+            {
+              label: 'Ver código',
+              href: 'https://github.com/sharonrodriguez22/sharonrodriguez22.github.io',
+            },
+          ],
+        },
+        {
           name: 'Sociedad Patitas — Sitio web para ONG',
           meta: 'Proyecto final · Desarrollo Web, CoderHouse (2026)',
           body: 'Sitio de adopción responsable de perros desarrollado de cero hasta el deploy: maquetación responsive, arquitectura de estilos con SASS, HTML semántico y SEO.',
@@ -292,6 +304,18 @@ export const content = {
             {
               label: 'View code',
               href: 'https://github.com/sharonrodriguez22/TicketazoG10Automatizado',
+            },
+          ],
+        },
+        {
+          name: 'This site — Bilingual portfolio and CV',
+          meta: 'Personal project · 2026',
+          body: 'Static site built with Astro, with content decoupled from presentation: a single typed TypeScript source feeds both the Spanish and English versions at build time. Every push to main triggers a GitHub Actions workflow that builds and deploys to GitHub Pages.',
+          tags: ['Astro', 'TypeScript', 'GitHub Actions'],
+          links: [
+            {
+              label: 'View code',
+              href: 'https://github.com/sharonrodriguez22/sharonrodriguez22.github.io',
             },
           ],
         },
