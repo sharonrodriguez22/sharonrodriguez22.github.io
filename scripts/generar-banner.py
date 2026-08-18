@@ -2,10 +2,6 @@
 Genera los banners 1200x630 que se ven al compartir el link
 (public/img/og-es.jpg y og-en.jpg).
 
-IMPORTANTE: la foto queda incrustada dentro del banner. Si reemplazás
-public/img/sharon-portrait.jpg, este script hay que volver a correrlo,
-o el banner va a seguir mostrando la foto anterior.
-
 Uso:
     pip install pillow numpy
     python scripts/generar-banner.py

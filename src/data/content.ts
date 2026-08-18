@@ -1,7 +1,5 @@
 /**
- * Contenido del sitio en ES / EN.
- * Todo sale de CV_Sharon_Rodriguez_QA_2026.pdf y su version en ingles.
- * Para actualizar el sitio, edita SOLO este archivo.
+ * Contenido del sitio en ES / EN
  */
 
 export type Lang = 'es' | 'en';
@@ -21,9 +19,9 @@ export const content = {
   es: {
     htmlLang: 'es',
     meta: {
-      title: 'Sharon Rodríguez Liendo — QA Automation Engineer',
+      title: 'Sharon Rodríguez Liendo — QA Analyst & Automation',
       description:
-        'QA Automation Engineer con más de 2 años en SaaS de RRHH y Payroll. Regresión automatizada en Cypress y Postman sobre CI/CD, performance con JMeter y testing de APIs e integraciones.',
+        'QA Analyst & Automation con más de 2 años en SaaS de RRHH y Payroll. Regresión automatizada en Cypress y Postman sobre CI/CD, performance con JMeter y testing de APIs e integraciones.',
     },
     nav: {
       about: 'Perfil',
@@ -35,11 +33,11 @@ export const content = {
     },
     langSwitch: { label: 'English', href: '/en/', code: 'EN' },
     hero: {
-      role: 'QA Automation Engineer',
-      tagline: 'Testing Manual y Automatizado · API & Data Testing',
-      location: 'Buenos Aires, Argentina · Híbrido o remoto',
+      role: 'QA Analyst & Automation',
+      tagline: 'Testing Manual y Automatizado · APIs & Performance Testing',
+      location: 'Buenos Aires, Argentina',
       intro:
-        'Más de 2 años asegurando la calidad de una plataforma SaaS de RRHH y Payroll en producción para clientes de LatAm.',
+        'QA Analyst con más de 2 años asegurando la calidad de una plataforma SaaS de RRHH y Payroll en producción para clientes de LatAm. Automatizo, rompo cosas a propósito y me aseguro de que lo que llega al usuario funcione.',
       cta: 'Descargar CV',
       cvHref: '/cv/CV-Sharon-Rodriguez-QA-ES.pdf',
       ctaSecondary: 'Contacto',
@@ -60,7 +58,7 @@ export const content = {
         'Traduzco el conocimiento del negocio en estrategias de testing que detectan riesgos temprano, en equipos ágiles junto a Desarrollo, Producto y Análisis Funcional.',
       ],
       rolesTitle: 'Roles que busco',
-      roles: ['QA Automation Engineer', 'QA Manual & Automation', 'QA Analyst'],
+      roles: ['QA Analyst & Automation', 'QA Manual & Automation', 'QA Analyst', 'QA Tester'],
     },
     experience: {
       kicker: '02 — Experiencia',
@@ -78,6 +76,7 @@ export const content = {
             'Automaticé la regresión con Cypress y Postman integrada al pipeline de CI/CD (Jenkins), migrando validaciones manuales a automatizadas y reduciendo el ciclo de regresión de 2 días a 3 horas.',
             'Diseñé y ejecuté pruebas manuales y automatizadas —funcionales, de regresión, integración y de APIs— sobre cada entrega, elaborando planes y casos de prueba y reportando defectos con criterio de riesgo.',
             'Ejecuté pruebas de performance con JMeter validando el ingreso de 1.000 a 2.000 empleados por minuto a la firma de recibos y otras gestiones web sin caídas de la aplicación, y analicé en AWS las métricas de estabilidad resultantes.',
+            'Participé como tester de una herramienta interna de IA Generativa para generación de casos de prueba y flujos en Postman, evaluando validez funcional, fidelidad al requerimiento y consistencia de la salida.',
             'Validé integraciones entre RRHH, Payroll y Gestión de Desempeño, verificando con SQL la consistencia de los datos y la continuidad de los procesos de negocio entre aplicaciones.',
             'Gestioné incidencias y requerimientos en Jira junto a Desarrollo, Producto y Análisis Funcional en entornos Scrum y Kanban, y documenté funcionalidades y procesos de QA en Confluence.',
             'Capacité y acompañé a más de 10 practicantes, acelerando su autonomía y la adopción de buenas prácticas de QA.',
@@ -175,15 +174,16 @@ export const content = {
       title: 'Formación',
       items: [
         {
-          name: 'Tecnicatura Superior en Ciencia de Datos e Inteligencia Artificial',
-          org: 'IFTS N.º 18',
-          period: '2025 – en curso',
-        },
-        {
           name: 'Carrera de Desarrollo de Aplicaciones',
           org: 'CoderHouse',
           period: '2026 – en curso',
         },
+        {
+          name: 'Tecnicatura Superior en Ciencia de Datos e Inteligencia Artificial',
+          org: 'IFTS N.º 18',
+          period: '2025 – en curso',
+        },
+        
       ],
     },
     certs: {
@@ -226,9 +226,9 @@ export const content = {
   en: {
     htmlLang: 'en',
     meta: {
-      title: 'Sharon Rodríguez Liendo — QA Automation Engineer',
+      title: 'Sharon Rodríguez Liendo — QA Analyst & Automation',
       description:
-        'QA Automation Engineer with 2+ years on a production HR and Payroll SaaS platform. Regression automated with Cypress and Postman on CI/CD, performance testing with JMeter, API and integration testing.',
+        'QA Analyst & Automation with 2+ years on a production HR and Payroll SaaS platform. Regression automated with Cypress and Postman on CI/CD, performance testing with JMeter, API and integration testing.',
     },
     nav: {
       about: 'About',
@@ -240,11 +240,11 @@ export const content = {
     },
     langSwitch: { label: 'Español', href: '/', code: 'ES' },
     hero: {
-      role: 'QA Automation Engineer',
-      tagline: 'Manual & Automated Testing · API & Data Testing',
-      location: 'Buenos Aires, Argentina · Hybrid or remote',
+      role: 'QA Analyst & Automation',
+      tagline: 'Manual & Automated Testing · API & Performance Testing',
+      location: 'Buenos Aires, Argentina',
       intro:
-        '2+ years ensuring the quality of a production HR and Payroll SaaS platform serving clients across Latin America.',
+        'QA Analyst with 2+ years ensuring the quality of a production HR and Payroll SaaS platform serving clients across Latin America. I automate, break things on purpose, and make sure what reaches the user actually works.',
       cta: 'Download CV',
       cvHref: '/cv/CV-Sharon-Rodriguez-QA-EN.pdf',
       ctaSecondary: 'Get in touch',
@@ -265,7 +265,7 @@ export const content = {
         'I turn business knowledge into testing strategies that surface risks early, working in agile teams alongside Development, Product and Business Analysis.',
       ],
       rolesTitle: 'Roles I am targeting',
-      roles: ['QA Automation Engineer', 'QA Manual & Automation', 'QA Analyst'],
+      roles: ['QA Analyst & Automation', 'QA Manual & Automation', 'QA Analyst', 'QA Tester'],
     },
     experience: {
       kicker: '02 — Experience',
@@ -283,6 +283,7 @@ export const content = {
             'Automated the regression suite with Cypress and Postman integrated into the CI/CD pipeline (Jenkins), migrating manual checks to automated ones and cutting the regression cycle from 2 days to 3 hours.',
             'Designed and executed manual and automated tests — functional, regression, integration and API — for every release, writing test plans and test cases and reporting defects based on business risk.',
             'Ran performance tests with JMeter validating 1,000 to 2,000 employees per minute signing payslips and running other web transactions with no application downtime, and analysed the resulting stability metrics in AWS.',
+            'Participated as tester of an internal Generative AI tool for test case generation and Postman flows, evaluating functional validity, requirement fidelity, and output consistency.',
             'Validated integrations across HR, Payroll and Performance Management, using SQL to verify data consistency and business process continuity between applications.',
             'Managed issues and requirements in Jira alongside Development, Product and Business Analysis in Scrum and Kanban environments, and documented features and QA processes in Confluence.',
             'Trained and mentored 10+ QA interns, accelerating their autonomy and adoption of QA best practices.',
@@ -380,14 +381,14 @@ export const content = {
       title: 'Education',
       items: [
         {
-          name: 'Associate Degree in Data Science and Artificial Intelligence',
-          org: 'IFTS N.º 18, Buenos Aires',
-          period: '2025 – in progress',
-        },
-        {
           name: 'Application Development Program',
           org: 'CoderHouse',
           period: '2026 – in progress',
+        },
+        {
+          name: 'Associate Degree in Data Science and Artificial Intelligence',
+          org: 'IFTS N.º 18, Buenos Aires',
+          period: '2025 – in progress',
         },
       ],
     },
