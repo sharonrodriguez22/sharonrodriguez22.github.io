@@ -58,7 +58,7 @@ export const content = {
         'Traduzco el conocimiento del negocio en estrategias de testing que detectan riesgos temprano, en equipos ágiles junto a Desarrollo, Producto y Análisis Funcional.',
       ],
       rolesTitle: 'Roles que busco',
-      roles: ['QA Analyst & Automation', 'QA Manual & Automation', 'QA Analyst', 'QA Tester'],
+      roles: ['QA Automation', 'QA Automation Engineer', 'QA Manual & Automation', 'QA Analyst', 'QA Tester'],
     },
     experience: {
       kicker: '02 — Experiencia',
@@ -265,7 +265,7 @@ export const content = {
         'I turn business knowledge into testing strategies that surface risks early, working in agile teams alongside Development, Product and Business Analysis.',
       ],
       rolesTitle: 'Roles I am targeting',
-      roles: ['QA Analyst & Automation', 'QA Manual & Automation', 'QA Analyst', 'QA Tester'],
+      roles: ['QA Automation', 'QA Automation Engineer' , 'QA Manual & Automation', 'QA Analyst', 'QA Tester'],
     },
     experience: {
       kicker: '02 — Experience',
