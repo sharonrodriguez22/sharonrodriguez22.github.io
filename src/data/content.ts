@@ -45,7 +45,7 @@ export const content = {
     },
     highlights: [
       { value: '+2 años', label: 'en QA sobre un SaaS de RRHH y Payroll en producción' },
-      { value: '2 días → 3 h', label: 'ciclo de regresión, automatizado con Cypress y Postman sobre CI/CD' },
+      { value: '1 día → 1 h', label: 'ciclo de regresión, automatizado con Cypress y Postman sobre CI/CD' },
       { value: '2.000/min', label: 'empleados procesados sin caídas: carga con JMeter, métricas en AWS' },
       { value: '+10', label: 'practicantes de QA formados en buenas prácticas y autonomía' },
     ],
@@ -73,7 +73,7 @@ export const content = {
           context:
             'Plataforma SaaS de RRHH y Payroll: recibos con firma digital, vacaciones, licencias y ciclo de vida del colaborador.',
           bullets: [
-            'Automaticé la regresión con Cypress y Postman integrada al pipeline de CI/CD (Jenkins), migrando validaciones manuales a automatizadas y reduciendo el ciclo de regresión de 2 días a 3 horas.',
+            'Automaticé la regresión con Cypress y Postman integrada al pipeline de CI/CD (Jenkins), migrando validaciones manuales a automatizadas y reduciendo el ciclo de regresión de 1 día a 1 hora.',
             'Diseñé y ejecuté pruebas manuales y automatizadas —funcionales, de regresión, integración y de APIs— sobre cada entrega, elaborando planes y casos de prueba y reportando defectos con criterio de riesgo.',
             'Ejecuté pruebas de performance con JMeter validando el ingreso de 1.000 a 2.000 empleados por minuto a la firma de recibos y otras gestiones web sin caídas de la aplicación, y analicé en AWS las métricas de estabilidad resultantes.',
             'Participé como tester de una herramienta interna de IA Generativa para generación de casos de prueba y flujos en Postman, evaluando validez funcional, fidelidad al requerimiento y consistencia de la salida.',
@@ -252,7 +252,7 @@ export const content = {
     },
     highlights: [
       { value: '2+ years', label: 'in QA on a production HR and Payroll SaaS platform' },
-      { value: '2 days → 3 h', label: 'regression cycle, automated with Cypress and Postman on CI/CD' },
+      { value: '1 day → 1 h', label: 'regression cycle, automated with Cypress and Postman on CI/CD' },
       { value: '2,000/min', label: 'employees processed with no downtime: load run in JMeter, metrics in AWS' },
       { value: '10+', label: 'QA interns trained in best practices and autonomy' },
     ],
@@ -280,7 +280,7 @@ export const content = {
           context:
             'HR and Payroll SaaS platform: digitally signed payslips, vacation and leave management, and employee lifecycle.',
           bullets: [
-            'Automated the regression suite with Cypress and Postman integrated into the CI/CD pipeline (Jenkins), migrating manual checks to automated ones and cutting the regression cycle from 2 days to 3 hours.',
+            'Automated the regression suite with Cypress and Postman integrated into the CI/CD pipeline (Jenkins), migrating manual checks to automated ones and cutting the regression cycle from 1 day to 1 hour.',
             'Designed and executed manual and automated tests — functional, regression, integration and API — for every release, writing test plans and test cases and reporting defects based on business risk.',
             'Ran performance tests with JMeter validating 1,000 to 2,000 employees per minute signing payslips and running other web transactions with no application downtime, and analysed the resulting stability metrics in AWS.',
             'Participated as tester of an internal Generative AI tool for test case generation and Postman flows, evaluating functional validity, requirement fidelity, and output consistency.',
