@@ -77,7 +77,7 @@ export const content = {
             'Validé el ingreso de 1.000 a 2.000 empleados por minuto sin caídas configurando y ejecutando pruebas de carga y estrés con JMeter, y analizando en AWS las métricas de estabilidad resultantes.',
             'Participé en 60 sprints validados end-to-end, transformando criterios de aceptación e historias de usuario en planes y casos de prueba trazables.',
             'Detecté defectos de integración invisibles en la interfaz contrastando con SQL la consistencia de los datos entre RRHH, Payroll y Gestión de Desempeño, antes de que impactaran en liquidaciones reales.',
-            'Aceleré la corrección de fallas analizando los reportes de ejecución para aislar si el origen era de infraestructura o de código, y registrando los defectos en Jira priorizados por riesgo.',
+            'Gestioné defectos en Jira dentro de un equipo ágil (Scrum), participando en ceremonias (planning, refinement, daily y retro), coordinando con Desarrollo la priorización de correcciones y dando seguimiento hasta su resolución en cada sprint.',
             'Participé como tester de una herramienta interna de IA Generativa para generación de casos de prueba y flujos en Postman, evaluando validez funcional, fidelidad al requerimiento y consistencia de la salida.',
             'Acompañé a más de 10 practicantes de QA en su formación y construí el material de referencia del equipo documentando funcionalidades y procesos en Confluence, reduciendo el tiempo de onboarding.',
           ],
@@ -98,6 +98,19 @@ export const content = {
             {
               label: 'Ver código',
               href: 'https://github.com/sharonrodriguez22/TicketazoG10Automatizado',
+            },
+          ],
+        },
+        {
+          name: 'Sociedad Patitas — Suite E2E con Playwright',
+          meta: 'Proyecto personal · Testing E2E sobre proyecto JavaScript, CoderHouse (2026)',
+          body: '17 tests end-to-end con Playwright sobre el simulador de adopción: carga sin errores, estructura del DOM, renderizado dinámico, validación de formularios, búsqueda, alta y persistencia en localStorage, flujo completo de adopción (happy path), padrinazgo, reserva, tránsito, rechazo y reinicio. Servidor HTTP local con redirección de CDN para ejecución offline e interacción con modales de SweetAlert2.',
+          tags: ['Playwright', 'JavaScript', 'Node.js', 'E2E Testing'],
+          links: [
+            { label: 'Ver app', href: 'https://sharonrodriguez22.github.io/sociedad-patitas-js/' },
+            {
+              label: 'Ver código',
+              href: 'https://github.com/sharonrodriguez22/sociedad-patitas-js',
             },
           ],
         },
@@ -295,7 +308,7 @@ export const content = {
             'Validated the onboarding of 1,000 to 2,000 employees per minute with no downtime by setting up and running load and stress tests with JMeter, and analyzing stability metrics in AWS.',
             'Took part in 60 sprints validated end-to-end, turning acceptance criteria and user stories into traceable test plans and test cases.',
             'Found integration bugs not visible in the UI by using SQL to check data consistency across HR, Payroll and Performance Management, before they affected real paychecks.',
-            'Sped up bug fixing by analyzing execution reports to find if the root cause was infrastructure or code, and logging defects in Jira sorted by risk.',
+            'Managed defects in Jira within an Agile team (Scrum), participating in ceremonies (planning, refinement, daily and retro), coordinating with Development to prioritize fixes and tracking them through resolution in each sprint.',
             'Participated as tester of an internal Generative AI tool for test case generation and Postman flows, evaluating functional validity, requirement fidelity, and output consistency.',
             'Trained 10+ QA interns and built the team’s reference material by documenting features and processes in Confluence, reducing onboarding time.',
           ],
@@ -316,6 +329,19 @@ export const content = {
             {
               label: 'View code',
               href: 'https://github.com/sharonrodriguez22/TicketazoG10Automatizado',
+            },
+          ],
+        },
+        {
+          name: 'Sociedad Patitas — E2E Suite with Playwright',
+          meta: 'Personal project · E2E Testing on JavaScript project, CoderHouse (2026)',
+          body: '17 end-to-end tests with Playwright on the adoption simulator: error-free loading, DOM structure, dynamic rendering, form validation, search, CRUD and localStorage persistence, full adoption flow (happy path), sponsorship, reservation, transit, rejection and reset. Local HTTP server with CDN redirection for offline execution and SweetAlert2 modal interaction.',
+          tags: ['Playwright', 'JavaScript', 'Node.js', 'E2E Testing'],
+          links: [
+            { label: 'View app', href: 'https://sharonrodriguez22.github.io/sociedad-patitas-js/' },
+            {
+              label: 'View code',
+              href: 'https://github.com/sharonrodriguez22/sociedad-patitas-js',
             },
           ],
         },
