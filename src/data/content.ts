@@ -20,7 +20,7 @@ export const content = {
     meta: {
       title: 'Sharon Rodríguez Liendo - QA Automation Engineer',
       description:
-        'QA Analyst & Automation con más de 2 años en SaaS de RRHH y Payroll. Regresión automatizada en Cypress y Postman sobre CI/CD, performance con JMeter y testing de APIs e integraciones.',
+        'QA Automation Engineer con más de 2 años en SaaS de RRHH y Payroll. Regresión automatizada en Cypress y Postman sobre CI/CD, performance con JMeter y testing de APIs e integraciones.',
     },
     nav: {
       about: 'Perfil',
@@ -36,7 +36,7 @@ export const content = {
       tagline: 'Testing Manual y Automatizado · APIs & Performance Testing',
       location: 'Buenos Aires, Argentina',
       intro:
-        'QA Analyst con más de 2 años asegurando la calidad de una plataforma SaaS de RRHH y Payroll en producción para clientes de LatAm. Automatizo, rompo cosas a propósito y me aseguro de que lo que llega al usuario funcione.',
+        'QA Automation Engineer con más de 2 años asegurando la calidad de una plataforma SaaS de RRHH y Payroll en producción para clientes de LatAm. Automatizo, rompo cosas a propósito y me aseguro de que lo que llega al usuario funcione.',
       cta: 'Descargar CV',
       cvHref: '/cv/CV-Sharon-Rodriguez-QA-ES.pdf',
       ctaSecondary: 'Contacto',
@@ -72,13 +72,13 @@ export const content = {
           context:
             'Plataforma SaaS de RRHH y Payroll: recibos con firma digital, vacaciones, licencias y ciclo de vida del colaborador.',
           bullets: [
-            'Reduje el ciclo de regresión de 1 día a 1 hora diseñando, codificando y manteniendo la suite automatizada en Cypress y Postman, integrando las suites en el pipeline de Jenkins.',
-            'Validé el ingreso de 1.000 a 2.000 empleados por minuto sin caídas configurando y ejecutando pruebas de carga y estrés con JMeter, y analizando en AWS las métricas de estabilidad resultantes.',
-            'Participé en 60 sprints validados end-to-end, transformando criterios de aceptación e historias de usuario en planes y casos de prueba trazables.',
-            'Detecté defectos de integración invisibles en la interfaz contrastando con SQL la consistencia de los datos entre RRHH, Payroll y Gestión de Desempeño, antes de que impactaran en liquidaciones reales.',
-            'Gestioné defectos en Jira dentro de un equipo ágil (Scrum), participando en ceremonias (planning, refinement, daily y retro), coordinando con Desarrollo la priorización de correcciones y dando seguimiento hasta su resolución en cada sprint.',
-            'Participé como tester de una herramienta interna de IA Generativa para generación de casos de prueba y flujos en Postman, evaluando validez funcional, fidelidad al requerimiento y consistencia de la salida.',
-            'Acompañé a más de 10 practicantes de QA en su formación y construí el material de referencia del equipo documentando funcionalidades y procesos en Confluence, reduciendo el tiempo de onboarding.',
+            'Automatización E2E y de APIs: diseñé, codifiqué y mantuve la regresión automatizada en Cypress y Postman sobre interfaz web y servicios, migrando validaciones manuales a automatizadas y reduciendo el ciclo de regresión de 1 día a 1 hora.',
+            'Integración en CI/CD: integré y ejecuté las suites automatizadas dentro del pipeline de Jenkins, dejando la regresión corriendo en cada entrega en lugar de al cierre del sprint.',
+            'De criterios de aceptación a pruebas: transformé historias de usuario y criterios de aceptación en planes y casos de prueba trazables, sobre 60 sprints validados end-to-end.',
+            'Performance Testing: configuré y ejecuté pruebas de carga y estrés con JMeter, validando el ingreso de 1.000 a 2.000 empleados por minuto a la firma de recibos y otras gestiones web sin caídas de la aplicación, y analicé en AWS las métricas de estabilidad resultantes.',
+            'Análisis de resultados y triage de defectos: analicé los reportes de ejecución para aislar si la falla era de infraestructura o de código, y registré los defectos en Jira priorizados por riesgo, haciendo seguimiento con Desarrollo hasta su resolución.',
+            'Validación de integraciones y datos: verifiqué el flujo entre RRHH, Payroll y Gestión de Desempeño, contrastando con SQL la consistencia de los datos y la continuidad de los procesos de negocio entre aplicaciones.',
+            'Estándares, documentación y mentoring: documenté funcionalidades y procesos de QA en Confluence creando el material de onboarding del equipo, y acompañé en su formación a más de 10 practicantes de QA.',
           ],
         },
       ],
@@ -251,7 +251,7 @@ export const content = {
     meta: {
       title: 'Sharon Rodríguez Liendo - QA Automation Engineer',
       description:
-        'QA Analyst & Automation with 2+ years on a production HR and Payroll SaaS platform. Regression automated with Cypress and Postman on CI/CD, performance testing with JMeter, API and integration testing.',
+        'QA Automation Engineer with 2+ years on a production HR and Payroll SaaS platform. Regression automated with Cypress and Postman on CI/CD, performance testing with JMeter, API and integration testing.',
     },
     nav: {
       about: 'About',
@@ -303,13 +303,13 @@ export const content = {
           context:
             'HR and Payroll SaaS platform: digitally signed payslips, vacation and leave management, and employee lifecycle.',
           bullets: [
-            'Reduced the regression cycle from 1 day to 1 hour by building and maintaining the automated suite in Cypress and Postman, and integrating it into the Jenkins pipeline.',
-            'Validated the onboarding of 1,000 to 2,000 employees per minute with no downtime by setting up and running load and stress tests with JMeter, and analyzing stability metrics in AWS.',
-            'Took part in 60 sprints validated end-to-end, turning acceptance criteria and user stories into traceable test plans and test cases.',
-            'Found integration bugs not visible in the UI by using SQL to check data consistency across HR, Payroll and Performance Management, before they affected real paychecks.',
-            'Managed defects in Jira within an Agile team (Scrum), participating in ceremonies (planning, refinement, daily and retro), coordinating with Development to prioritize fixes and tracking them through resolution in each sprint.',
-            'Participated as tester of an internal Generative AI tool for test case generation and Postman flows, evaluating functional validity, requirement fidelity, and output consistency.',
-            'Trained 10+ QA interns and built the team’s reference material by documenting features and processes in Confluence, reducing onboarding time.',
+            'End-to-end and API automation: designed, coded and maintained the automated regression suite in Cypress and Postman across web interface and services, migrating manual checks to automated ones and cutting the regression cycle from 1 day to 1 hour.',
+            'CI/CD integration: integrated and ran the automated suites inside the Jenkins pipeline, keeping regression running on every delivery instead of at the end of the sprint.',
+            'From acceptance criteria to tests: turned user stories and acceptance criteria into traceable test plans and test cases, across 60 sprints validated end-to-end.',
+            'Performance testing: set up and ran load and stress tests with JMeter, validating 1,000 to 2,000 employees per minute signing payslips and running other web operations with no application downtime, and analysed the resulting stability metrics in AWS.',
+            'Results analysis and defect triage: analysed execution reports to isolate whether a failure came from infrastructure or code, and logged defects in Jira prioritised by risk, following up with Development through to resolution.',
+            'Integration and data validation: verified the flow across HR, Payroll and Performance Management, using SQL to check data consistency and business process continuity between applications.',
+            'Standards, documentation and mentoring: documented QA features and processes in Confluence, creating the team´s onboarding material, and supported the training of 10+ QA interns.',
           ],
         },
       ],
