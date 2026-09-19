@@ -19,7 +19,7 @@ export const content = {
   es: {
     htmlLang: 'es',
     meta: {
-      title: 'Sharon Rodríguez Liendo — QA Automation Engineer',
+      title: 'Sharon Rodríguez Liendo - QA Automation Engineer',
       description:
         'QA Automation Engineer con más de 2 años en un SaaS de RRHH y Payroll en producción. Suites E2E y de APIs en Playwright, Cypress y Postman integradas a CI/CD, performance con JMeter y validación de datos con SQL.',
     },
@@ -50,26 +50,26 @@ export const content = {
       { value: '+10', label: 'practicantes de QA formados en buenas prácticas y autonomía' },
     ],
     about: {
-      kicker: '01 — Perfil',
+      kicker: '01 - Perfil',
       title: 'Automatizar lo que se repite, explorar lo que no',
       blurb: '',
       body: [
         'Diseño, codifico y mantengo suites automatizadas E2E y de APIs REST en Cypress, Playwright y Postman, integradas al pipeline de CI/CD (Jenkins) para que la regresión corra en cada entrega. Codifico en JavaScript y TypeScript, valido con SQL la consistencia de los datos entre servicios, y sostengo pruebas de carga y estrés con JMeter.',
-        'Uso asistentes de IA dentro del flujo de testing —generación de casos, scaffolding de automatización y análisis de fallos— validando críticamente cada salida antes de integrarla. Lo que no conviene automatizar lo cubro con testing exploratorio basado en riesgo, priorizando por impacto en el negocio.',
+        'Uso asistentes de IA dentro del flujo de testing (generación de casos, scaffolding de automatización y análisis de fallos), validando críticamente cada salida antes de integrarla. Lo que no conviene automatizar lo cubro con testing exploratorio basado en riesgo, priorizando por impacto en el negocio.',
         'Traduzco el conocimiento del producto en estrategias de testing que detectan riesgos temprano, en equipos ágiles junto a Desarrollo, Producto y Análisis Funcional.',
       ],
       rolesTitle: 'Roles que busco',
       roles: ['QA Automation Engineer', 'QA Automation', 'Automation Tester', 'QA Analyst', 'QA Tester'],
     },
     experience: {
-      kicker: '02 — Experiencia',
+      kicker: '02 - Experiencia',
       title: 'Dónde trabajé',
       blurb: 'Más de dos años en un producto vivo, con releases continuos y usuarios reales.',
       items: [
         {
           role: 'QA Analyst',
           company: 'Visma LatAm',
-          period: 'Abril 2024 – Julio 2026',
+          period: 'Abril 2024 - Julio 2026',
           place: 'Argentina · Híbrido',
           context:
             'Plataforma SaaS de RRHH y Payroll: recibos con firma digital, vacaciones, licencias y ciclo de vida del colaborador.',
@@ -87,12 +87,12 @@ export const content = {
       ],
     },
     projects: {
-      kicker: '03 — Proyectos',
+      kicker: '03 - Proyectos',
       title: 'Trabajo que se puede mirar',
       blurb: 'Automatización y desarrollo propio, con el código público en GitHub.',
       items: [
         {
-          name: 'Sociedad Patitas — Suite E2E con Playwright',
+          name: 'Sociedad Patitas - Suite E2E con Playwright',
           meta: 'Proyecto personal · Testing E2E sobre proyecto JavaScript, CoderHouse (2026)',
           body: '17 tests end-to-end con Playwright sobre el simulador de adopción: carga sin errores, estructura del DOM, renderizado dinámico, validación de formularios, búsqueda, alta y persistencia en localStorage, flujo completo de adopción (happy path), padrinazgo, reserva, tránsito, rechazo y reinicio. Servidor HTTP local con redirección de CDN para ejecución offline e interacción con modales de SweetAlert2.',
           tags: ['Playwright', 'JavaScript', 'Node.js', 'E2E Testing'],
@@ -105,7 +105,7 @@ export const content = {
           ],
         },
         {
-          name: 'Ticketazo — Automatización E2E con Cypress',
+          name: 'Ticketazo - Automatización E2E con Cypress',
           meta: 'Proyecto final · QA Automation, Santex & TWPF (2025)',
           body: 'Automatización end-to-end de casos funcionales y no funcionales sobre una plataforma real de venta de entradas, con escenarios positivos y negativos y trabajo colaborativo en GitHub bajo metodología ágil.',
           tags: ['Cypress', 'JavaScript', 'GitHub', 'Scrum'],
@@ -117,7 +117,7 @@ export const content = {
           ],
         },
         {
-          name: 'Este sitio — Portfolio y CV bilingüe',
+          name: 'Este sitio - Portfolio y CV bilingüe',
           meta: 'Proyecto personal · 2026',
           body: 'Lo construí y lo publiqué de punta a punta. El contenido vive en una única fuente tipada en TypeScript que genera las versiones en español e inglés, así los dos idiomas no se desincronizan. Cada push a main dispara un pipeline de GitHub Actions que compila y despliega solo, sin pasos manuales.',
           tags: ['Astro', 'TypeScript', 'GitHub Actions'],
@@ -129,7 +129,7 @@ export const content = {
           ],
         },
         {
-          name: 'Sociedad Patitas — Simulador de adopción con JavaScript',
+          name: 'Sociedad Patitas - Simulador de adopción con JavaScript',
           meta: 'Proyecto final · JavaScript, CoderHouse (2026)',
           body: 'Aplicación interactiva con consumo de APIs externas (Fetch, async/await), manipulación del DOM, persistencia con localStorage/sessionStorage, validación de formularios, manejo de errores (try/catch) y librerías de terceros (SweetAlert2, Toastify). Es la aplicación que después automaticé con Playwright.',
           tags: ['JavaScript', 'HTML', 'SASS/CSS', 'APIs REST'],
@@ -139,7 +139,7 @@ export const content = {
           ],
         },
         {
-          name: 'Sociedad Patitas — Sitio web para ONG',
+          name: 'Sociedad Patitas - Sitio web para ONG',
           meta: 'Proyecto final · Desarrollo Web, CoderHouse (2026)',
           body: 'Sitio de adopción responsable de perros desarrollado de cero hasta el deploy: maquetación responsive, arquitectura de estilos con SASS, HTML semántico y SEO.',
           tags: ['HTML', 'SASS', 'Responsive', 'SEO'],
@@ -151,7 +151,7 @@ export const content = {
       ],
     },
     skills: {
-      kicker: '04 — Stack técnico',
+      kicker: '04 - Stack técnico',
       title: 'Skills',
       blurb: 'Herramientas usadas a diario en un entorno de producción con releases continuos.',
       groups: [
@@ -202,17 +202,17 @@ export const content = {
         {
           name: 'Carrera de Desarrollo de Aplicaciones',
           org: 'CoderHouse',
-          period: '2026 – en curso',
+          period: '2026 - en curso',
         },
         {
           name: 'Tecnicatura Superior en Ciencia de Datos e Inteligencia Artificial',
           org: 'IFTS N.º 18',
-          period: '2025 – en curso',
+          period: '2025 - en curso',
         },
       ],
     },
     certs: {
-      kicker: '05 — Formación',
+      kicker: '05 - Formación',
       title: 'Certificaciones y estudios',
       blurb: 'Formación continua en testing, datos e IA aplicada a QA.',
       items: [
@@ -230,11 +230,11 @@ export const content = {
       title: 'Idiomas',
       items: [
         { name: 'Español', level: 'Nativo' },
-        { name: 'Inglés', level: 'Intermedio (B1) — lectura técnica y documentación' },
+        { name: 'Inglés', level: 'Intermedio (B1) - lectura técnica y documentación' },
       ],
     },
     contact: {
-      kicker: '06 — Contacto',
+      kicker: '06 - Contacto',
       title: 'Hablemos',
       emailLabel: 'Email',
       linkedinLabel: 'LinkedIn',
@@ -251,7 +251,7 @@ export const content = {
   en: {
     htmlLang: 'en',
     meta: {
-      title: 'Sharon Rodríguez Liendo — QA Automation Engineer',
+      title: 'Sharon Rodríguez Liendo - QA Automation Engineer',
       description:
         'QA Automation Engineer with 2+ years on a production HR and Payroll SaaS platform. End-to-end and API suites in Playwright, Cypress and Postman integrated into CI/CD, performance testing with JMeter and data validation with SQL.',
     },
@@ -282,26 +282,26 @@ export const content = {
       { value: '10+', label: 'QA interns trained in best practices and autonomy' },
     ],
     about: {
-      kicker: '01 — About',
+      kicker: '01 - About',
       title: 'Automate what repeats, explore what does not',
       blurb: '',
       body: [
         'I design, code and maintain end-to-end and REST API automated suites in Cypress, Playwright and Postman, integrated into the CI/CD pipeline (Jenkins) so regression runs on every delivery. I code in JavaScript and TypeScript, use SQL to validate data consistency across services, and run load and stress tests with JMeter.',
-        'I bring AI assistants into the testing workflow — test case generation, automation scaffolding and failure analysis — critically validating every output before integrating it. What is not worth automating I cover with risk-based exploratory testing, prioritised by business impact.',
+        'I bring AI assistants into the testing workflow (test case generation, automation scaffolding and failure analysis), critically validating every output before integrating it. What is not worth automating I cover with risk-based exploratory testing, prioritised by business impact.',
         'I turn product knowledge into testing strategies that surface risks early, working in agile teams alongside Development, Product and Business Analysis.',
       ],
       rolesTitle: 'Roles I am targeting',
       roles: ['QA Automation Engineer', 'QA Automation', 'Automation Tester', 'QA Analyst', 'QA Tester'],
     },
     experience: {
-      kicker: '02 — Experience',
+      kicker: '02 - Experience',
       title: 'Where I have worked',
       blurb: 'Two-plus years on a live product with continuous releases and real users.',
       items: [
         {
           role: 'QA Analyst',
           company: 'Visma LatAm',
-          period: 'April 2024 – July 2026',
+          period: 'April 2024 - July 2026',
           place: 'Argentina · Hybrid',
           context:
             'HR and Payroll SaaS platform: digitally signed payslips, vacation and leave management, and employee lifecycle.',
@@ -319,12 +319,12 @@ export const content = {
       ],
     },
     projects: {
-      kicker: '03 — Projects',
+      kicker: '03 - Projects',
       title: 'Work you can look at',
       blurb: 'Automation and personal development work, with the source public on GitHub.',
       items: [
         {
-          name: 'Sociedad Patitas — E2E Suite with Playwright',
+          name: 'Sociedad Patitas - E2E Suite with Playwright',
           meta: 'Personal project · E2E Testing on JavaScript project, CoderHouse (2026)',
           body: '17 end-to-end tests with Playwright on the adoption simulator: error-free loading, DOM structure, dynamic rendering, form validation, search, CRUD and localStorage persistence, full adoption flow (happy path), sponsorship, reservation, transit, rejection and reset. Local HTTP server with CDN redirection for offline execution and SweetAlert2 modal interaction.',
           tags: ['Playwright', 'JavaScript', 'Node.js', 'E2E Testing'],
@@ -337,7 +337,7 @@ export const content = {
           ],
         },
         {
-          name: 'Ticketazo — End-to-End Automation with Cypress',
+          name: 'Ticketazo - End-to-End Automation with Cypress',
           meta: 'Capstone project · QA Automation, Santex & TWPF (2025)',
           body: 'End-to-end automation of functional and non-functional test cases on a real ticket-sales platform, covering positive and negative scenarios, with collaborative work on GitHub under an agile methodology.',
           tags: ['Cypress', 'JavaScript', 'GitHub', 'Scrum'],
@@ -349,7 +349,7 @@ export const content = {
           ],
         },
         {
-          name: 'This site — Bilingual portfolio and CV',
+          name: 'This site - Bilingual portfolio and CV',
           meta: 'Personal project · 2026',
           body: 'I built and shipped it end to end. All content lives in a single typed TypeScript source that generates both the Spanish and English versions, so the two never drift apart. Every push to main triggers a GitHub Actions pipeline that builds and deploys on its own, with no manual steps.',
           tags: ['Astro', 'TypeScript', 'GitHub Actions'],
@@ -361,7 +361,7 @@ export const content = {
           ],
         },
         {
-          name: 'Sociedad Patitas — Adoption Simulator with JavaScript',
+          name: 'Sociedad Patitas - Adoption Simulator with JavaScript',
           meta: 'Capstone project · JavaScript, CoderHouse (2026)',
           body: 'Interactive app consuming external APIs (Fetch, async/await), DOM manipulation, localStorage/sessionStorage persistence, form validation, error handling (try/catch) and third-party libraries (SweetAlert2, Toastify). It is the application I later automated with Playwright.',
           tags: ['JavaScript', 'HTML', 'SASS/CSS', 'REST APIs'],
@@ -371,7 +371,7 @@ export const content = {
           ],
         },
         {
-          name: 'Sociedad Patitas — NGO Website',
+          name: 'Sociedad Patitas - NGO Website',
           meta: 'Capstone project · Web Development, CoderHouse (2026)',
           body: 'Responsible dog adoption website built from scratch through deployment: responsive layout, SASS-based style architecture, semantic HTML and SEO.',
           tags: ['HTML', 'SASS', 'Responsive', 'SEO'],
@@ -383,7 +383,7 @@ export const content = {
       ],
     },
     skills: {
-      kicker: '04 — Technical stack',
+      kicker: '04 - Technical stack',
       title: 'Skills',
       blurb: 'Tools used daily in a production environment with continuous releases.',
       groups: [
@@ -434,17 +434,17 @@ export const content = {
         {
           name: 'Application Development Program',
           org: 'CoderHouse',
-          period: '2026 – in progress',
+          period: '2026 - in progress',
         },
         {
           name: 'Associate Degree in Data Science and Artificial Intelligence',
           org: 'IFTS N.º 18, Buenos Aires',
-          period: '2025 – in progress',
+          period: '2025 - in progress',
         },
       ],
     },
     certs: {
-      kicker: '05 — Education',
+      kicker: '05 - Education',
       title: 'Certifications and studies',
       blurb: 'Continuous training in testing, data and AI applied to QA.',
       items: [
@@ -462,11 +462,11 @@ export const content = {
       title: 'Languages',
       items: [
         { name: 'Spanish', level: 'Native' },
-        { name: 'English', level: 'Intermediate (B1) — technical reading and documentation' },
+        { name: 'English', level: 'Intermediate (B1) - technical reading and documentation' },
       ],
     },
     contact: {
-      kicker: '06 — Contact',
+      kicker: '06 - Contact',
       title: "Let's talk",
       emailLabel: 'Email',
       linkedinLabel: 'LinkedIn',
